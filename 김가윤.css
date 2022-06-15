@@ -1,0 +1,181 @@
+body{
+    margin: 0 auto;
+}
+main,
+footer,
+nav,
+aside,
+header {
+    display: block;
+}
+
+#wrapper {
+    color: grey;
+
+
+}
+
+.menu {
+    /* display: inline-block; */
+    width: 100%;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin-top: 0px;
+
+}
+
+ul {
+
+    list-style-type: none;
+
+}
+
+.menu ul {
+    height: 25px;
+
+}
+
+.menu li {
+    display: inline;
+    font-weight: bold;
+    float: left;
+    position: relative;
+    margin: 15px;
+    margin-top: 4px;
+
+}
+
+.menu a {
+    display: inline-block;
+    text-decoration: none;
+    display: inline;
+    color: #555;
+    font-weight: bold;
+}
+
+#contentWrap {
+    width: 1180px;
+    /* font-size: .8rem; */
+    max-width: 100%;
+    position: relative;
+    margin: 2.5rem auto 0;
+
+
+}
+
+#snb {
+    display: block;
+    width: 23%;
+    float: left;
+
+}
+
+#snb .title {
+    font-size: 1.3rem;
+    font-weight: 400;
+    position: relative;
+    padding: .1rem 0 .8rem;
+    border-bottom: 2px solid #d3d8dd;
+}
+
+#snb .nav {
+    margin-bottom: 1rem;
+
+}
+
+#left_menu {
+    border-bottom: 1px solid #d3d8dd;
+    /* list-style: none; */
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+
+
+}
+
+#left_menu a {
+    text-decoration: none;
+}
+
+#left_menu li {
+    /* text-decoration: none; */
+    position: relative;
+    line-height: inherit;
+    padding: 10px;
+}
+
+#snb .nav>ul>li~li {
+    border-top: 1px solid #eaeef3;
+}
+
+#snb+#content {
+    width: 75%;
+    margin-left: 2%;
+    float: left;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+#content_info {
+    margin-bottom: 1.5rem;
+    position: relative;
+    text-align: left;
+}
+
+.content_info>.title {
+    font-size: 1.4rem;
+    color: #333;
+    line-height: 1.15;
+    padding-bottom: 1.2rem;
+    border-bottom: 2px solid #222;
+    letter-spacing: -0.03em;
+}
+
+.content_info .loac_wrap {
+    position: absolute;
+    right: 0;
+    top: -2rem;
+}
+.title {
+    border-bottom: #eaeef3;
+}
+
+.title a {
+    display: inline;
+}
+
+.loac_wrap li a {
+    display: inline;
+    text-decoration: none;
+}
+
+.loac_wrap .location {
+    padding: .5rem 0;
+    font-size: .7rem;
+    position: relative;
+    display: inline;
+}
+
+.location ul {
+    /* display: inline-block; */
+    /* position: relative; */
+    float: right;
+   
+}
+
+.bhead {
+    padding: px;
+}
+
+tr,
+td,
+th {
+    border-bottom: 1px solid #eaeef3;
+    padding: 10px;
+}
+
+.page {
+    clear: both;
+    text-align:center;
+    margin-left: 200px;
+}

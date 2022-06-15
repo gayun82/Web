@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습사이트</title>
+    <style type="text/css">
+        body {
+            font-size: 10px;
+            width: 100%;
+            height: 100%;
+            
+        }
+
+        #wrapper {
+            margin: 0 auto;
+        }
+
+        #wrapper>header {
+            width: 100%;
+            height: 50px;
+            background-color: navy;
+        }
+
+        header nav {
+            font-size: 15px;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin-top: 3px;
+        }
+
+        nav li {
+            display: inline;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        section header {
+            border-bottom: darkgray;
+        }
+
+        section header h1 {
+            font-size: 10px;
+        }
+        h1{
+            margin-bottom: 0px;
+            margin-top: 38px;
+        }
+
+        h3 {
+           display: block;
+            font-size: 25px;
+            line-height: 1.5em;
+            border-bottom: 1px solid darkgray;
+            padding: 10px 18px;
+            margin-top: 0px;
+        }
+        h4{
+            margin-bottom: 6px;
+            font-size: 22px;
+        }
+        h5 {
+            margin-bottom: 6px;
+            font-size: 22px;
+        }
+        table {
+            width: 800px;
+        }
+
+        .tg1 {
+            border-collapse: collapse;
+            border-color: #ccc;
+            border-spacing: 0;
+        }
+       
+        .tg1 td {
+            background-color: #fff;
+            border-color: #ccc;
+            border-style: solid;
+            border-width: 0px;
+            color: #333;
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+        }
+
+        .tg1 th {
+            background-color: #f0f0f0;
+            border-color: #ccc;
+            border-style: solid;
+            border-width: 0px;
+            color: #333;
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+        }
+
+        .tg1 .tg-dbbi {
+            border-color: inherit;
+            font-size: 13px;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: top
+        }
+
+        .tg1 .tg-hy3f {
+            font-size: 13px;
+            text-align: right;
+            vertical-align: top
+        }
+
+        .tg1 .tg-ygzf {
+            font-size: 13px;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: top
+        }
+      /* </style>
+    <style type="text/css"> */ 
+       
+        .tg2 {
+            border-collapse: collapse;
+            border-color: #ccc;
+            border-spacing: 0;
+            width: 900px;
+        }
+
+        .tg2 td {
+            background-color: #fff;
+            border-color: #ccc;
+            border-style: solid;
+            border-width: 0px;
+            color: #333;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+        }
+
+        .tg2 th {
+            background-color: #f0f0f0;
+            border-color: #ccc;
+            border-style: solid;
+            border-width: 0px;
+            color: #333;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+        }
+
+        .tg2 .tg2-djxm {
+            background-color: #f0f0f0;
+            border-color: #333333;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: top
+        }
+
+        .tg2 .tg2-baqh {
+            text-align: center;
+            vertical-align: top
+        }
+        .tg2 .tg2-9ydz {
+            border-color: #333333;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: top
+        }
+
+        .tg2 .tg2-txla {
+            background-color: #f0f0f0;
+            border-color: #333333;
+            text-align: right;
+            vertical-align: top
+        }
+
+        .tg2 .tg2-lqy6 {
+            text-align: right;
+            vertical-align: top
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">바로알기</a></li>
+                    <li><a href="#">예방접종 현황</a></li>
+                    <li><a href="#">이상반응</a></li>
+                    <li><a href="#">뉴스&팩트체크</a></li>
+                    <li><a href="#">허위조작정보신고</a></li>
+                    <li><a href="#">홍보자료</a></li>
+                    <li><a href="#">Q&A모음</a></li>
+                    <li><a href="#">알림서식</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <header>
+                <h1>>예방접종 현황>시도별 일일 접종 현황</h1>
+
+            </header>
+            <h3>시도별 일일 접종 현황</h3>
+            <article class="part1">
+                <h4>접종실적 총괄(06.14, 00시 기준)</h4>
+                <table class="tg1">
+                    <thead>
+                        <tr>
+                            <th class="tg-dbbi">구분</th>
+                            <th class="tg-ygzf">1차접종</th>
+                            <th class="tg-ygzf">2차접종</th>
+                            <th class="tg-ygzf">3차접종</th>
+                            <th class="tg-ygzf">4차접종</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tg-ygzf">당일누적 A+B</td>
+                            <td class="tg-hy3f">45,061,152</td>
+                            <td class="tg-hy3f">44,610,957</td>
+                            <td class="tg-hy3f">33,338,740</td>
+                            <td class="tg-hy3f">4,268,918</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-ygzf">당일 실적 A</td>
+                            <td class="tg-hy3f">322</td>
+                            <td class="tg-hy3f">849</td>
+                            <td class="tg-hy3f">2,570</td>
+                            <td class="tg-hy3f">10,683</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-ygzf">전일누적 B</td>
+                            <td class="tg-hy3f">45,060,830</td>
+                            <td class="tg-hy3f">44,610,108</td>
+                            <td class="tg-hy3f">33,336,170</td>
+                            <td class="tg-hy3f">4,258,235</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article class="part2">
+                <h5>시도별 접종 현황</h5>
+                <table class="tg2">
+                    <thead>
+                        <tr>
+                            <th class="tg2-9ydz" rowspan="2">구분</th>
+                            <th class="tg2-9ydz" colspan="2">1차접종</th>
+                            <th class="tg2-9ydz" colspan="2">2차접종</th>
+                            <th class="tg2-9ydz" colspan="2">3차접종</th>
+                            <th class="tg2-9ydz" colspan="2">4차접종</th>
+                        </tr>
+                        <tr>
+                            <th class="tg2-djxm">당일 실적</th>
+                            <th class="tg2-djxm">당일 누계</th>
+                            <th class="tg2-djxm">당일 실적</th>
+                            <th class="tg2-djxm">당일 누계</th>
+                            <th class="tg2-djxm">당일 실적</th>
+                            <th class="tg2-djxm">당일누계</th>
+                            <th class="tg2-djxm">당일 실적</th>
+                            <th class="tg2-djxm">당일 누계</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tg2-djxm">합계</td>
+                            <td class="tg2-txla">322</td>
+                            <td class="tg2-txla">45,061,152</td>
+                            <td class="tg2-txla">849</td>
+                            <td class="tg2-txla">44,610,957</td>
+                            <td class="tg2-txla">2,570</td>
+                            <td class="tg2-txla">33,338,740</td>
+                            <td class="tg2-txla">10,683</td>
+                            <td class="tg2-txla">4,268,918</td>
+                        </tr>
+                        <tr>
+                            <td class="tg2-baqh">서울</td>
+                            <td class="tg2-lqy6">73</td>
+                            <td class="tg2-lqy6">8,335,637</td>
+                            <td class="tg2-lqy6">31</td>
+                            <td class="tg2-lqy6">2,848,488</td>
+                            <td class="tg2-lqy6">595</td>
+                            <td class="tg2-lqy6">6,008,333</td>
+                            <td class="tg2-lqy6">1,932</td>
+                            <td class="tg2-lqy6">690,210</td>
+                        </tr>
+                        <tr>
+                            <td class="tg2-baqh">부산</td>
+                            <td class="tg2-lqy6">20</td>
+                            <td class="tg2-lqy6">2,878,141</td>
+                            <td class="tg2-lqy6">31</td>
+                            <td class="tg2-lqy6">2,848,488</td>
+                            <td class="tg2-lqy6">167</td>
+                            <td class="tg2-lqy6">835</td>
+                            <td class="tg2-lqy6">835</td>
+                            <td class="tg2-lqy6">284,626</td>
+                        </tr>
+                        <tr>
+                            <td class="tg2-baqh">대구</td>
+                            <td class="tg2-lqy6">17</td>
+                            <td class="tg2-lqy6">2,018,348</td>
+                            <td class="tg2-lqy6">44</td>
+                            <td class="tg2-lqy6">1,995,058</td>
+                            <td class="tg2-lqy6">116</td>
+                            <td class="tg2-lqy6">1,893,424</td>
+                            <td class="tg2-lqy6">542</td>
+                            <td class="tg2-lqy6">224,318</td>
+                        </tr>
+                        <tr>
+                            <td class="tg2-baqh">인천</td>
+                            <td class="tg2-lqy6">16</td>
+                            <td class="tg2-lqy6">2,566,621</td>
+                            <td class="tg2-lqy6">34</td>
+                            <td class="tg2-lqy6">2,541,373</td>
+                            <td class="tg2-lqy6">123</td>
+                            <td class="tg2-lqy6">1,893,424</td>
+                            <td class="tg2-lqy6">542</td>
+                            <td class="tg2-lqy6">224,138</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </article>
+        </section>
+    </div>
+</body>
+
+</html>
