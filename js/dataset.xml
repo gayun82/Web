@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+<record><id>1</id><first_name>Gunner</first_name><last_name>Paffot</last_name><email>gpaffot0@multiply.com</email><gender>Non-binary</gender><salary>4313</salary></record>
+<record><id>2</id><first_name>Sarene</first_name><last_name>Broxholme</last_name><email>sbroxholme1@rediff.com</email><gender>Female</gender><salary>1722</salary></record>
+<record><id>3</id><first_name>Genny</first_name><last_name>Eskrigge</last_name><email>geskrigge2@cargocollective.com</email><gender>Female</gender><salary>2471</salary></record>
+<record><id>4</id><first_name>Crin</first_name><last_name>Hanlon</last_name><email>chanlon3@wordpress.org</email><gender>Female</gender><salary>3812</salary></record>
+<record><id>5</id><first_name>Anatollo</first_name><last_name>Simione</last_name><email>asimione4@unesco.org</email><gender>Male</gender><salary>1566</salary></record>
+<record><id>6</id><first_name>Charisse</first_name><last_name>Beese</last_name><email>cbeese5@samsung.com</email><gender>Female</gender><salary>3002</salary></record>
+<record><id>7</id><first_name>Hubie</first_name><last_name>Erskine</last_name><email>herskine6@smugmug.com</email><gender>Male</gender><salary>1558</salary></record>
+<record><id>8</id><first_name>Trey</first_name><last_name>Gornar</last_name><email>tgornar7@cam.ac.uk</email><gender>Non-binary</gender><salary>1928</salary></record>
+<record><id>9</id><first_name>Noland</first_name><last_name>Edlington</last_name><email>nedlington8@google.nl</email><gender>Male</gender><salary>1990</salary></record>
+<record><id>10</id><first_name>Roderich</first_name><last_name>Bridgstock</last_name><email>rbridgstock9@etsy.com</email><gender>Male</gender><salary>4057</salary></record>
+<record><id>11</id><first_name>Odelle</first_name><last_name>Hymor</last_name><email>ohymora@go.com</email><gender>Female</gender><salary>2417</salary></record>
+<record><id>12</id><first_name>Nathanial</first_name><last_name>Yakovitch</last_name><email>nyakovitchb@e-recht24.de</email><gender>Male</gender><salary>2493</salary></record>
+<record><id>13</id><first_name>Sterne</first_name><last_name>Keerl</last_name><email>skeerlc@nasa.gov</email><gender>Male</gender><salary>2210</salary></record>
+<record><id>14</id><first_name>Gene</first_name><last_name>Monery</last_name><email>gmoneryd@baidu.com</email><gender>Male</gender><salary>4720</salary></record>
+<record><id>15</id><first_name>Benedick</first_name><last_name>Hutcheon</last_name><email>bhutcheone@weebly.com</email><gender>Male</gender><salary>1957</salary></record>
+</dataset>
