@@ -1,27 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>main.html</title>
     <script>
-      
+
     </script>
 </head>
+
 <body>
     <!-- <a href="#">이동사이트</a> -->
     <!-- <input type="file" id="selectFile" name="selectFile"  accept="text/plain"> -->
-    <script src="js/array_basic3.js"></script>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+    </ul>
+    <div>
+        <h3>cities</h3>
+        <ul>
+            <li id="one" class="red">Seoul</li>
+            <li id="two" class="red">London</li>
+            <li id="three" class="red">Newyork</li>
+            <li id="four">Tokyo</li>
+        </ul>
+    </div>
+    <button id="add1">click</button>
+    <button id="add2">click</button>
+    <!-- <script src="js/array_method.js"></script> -->
 
     <button id="add">클릭</button>
-    <!-- <script>
-       let btn = document.getElementById('add');
-       console.log(btn);
-       btn.addEventListener('click', function(){
-        //    alert('버튼을 클릭');
-            console.log(this);// window (x) ,object (x) eventTarget (o)
-       })
-    </script> -->
+    <script>
+        // console.log(window)
+        let list = document.getElementsByTagName('li');//HTMLcollection
+        let detail = list[3];
+        //element, attribute, text => node. DOM API(method(),속성)
+        let attNode = detail.getAttribute('id');
+        let txtNode = detail.childNodes[0];
+        // console.log(detail, attNode, txtNode);
+
+        let add1 = document.getElementById('add1');
+        add1.addEventListener('click',function(){
+            //element node 생성
+        let li = document.createElement('li'); //element node 생성
+        li.innerHTML = '대구';
+        let ul = document.querySelector('div > ul');
+        ul.appendChild(li);//<ul><li>대구</li></ul>
+        console.log(li);
+        })
+
+        let btns = document.querySelectorAll('button')//NodeList 타입
+        btns[1].addEventListener('click', function(){//click자리에 mouseover 마우스를 올리면
+            document.querySelector('div > ul > li').remove();
+        })
+        console.log(btns[1]);
+
+        
+
+        // let btn = document.getElementById('add');
+        // // console.log(btn);
+        // btn.addEventListener('click', function () {
+        //     //    alert('버튼을 클릭');
+        //     // console.log(this); // window (x) ,object (x) eventTarget (o)
+        // })
+    </script>
 </body>
+
 </html>
