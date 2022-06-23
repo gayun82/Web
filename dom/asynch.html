@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>asynch.html</title>
+    <script>
+        //동기 vs 비동기
+        setTimeout(function () {
+            console.log('Start');
+
+            setTimeout(function () {
+                console.log('mid');
+
+                setTimeout(function () {
+                    console.log('end');
+                }, 1500)
+
+            }, 1000);
+        }, 2000);
+
+
+        let xhtp = new XMLHttpRequest(); //Ajax : 파일정보 읽기.
+        // xhtp.open('get', 'data.txt'); //요청방식, 요청URL
+        // xhtp.open('get', 'data.json');
+        xhtp.open('get', '../js/dataset.xml');
+        xhtp.send();
+        xhtp.onload = loadCallBack;
+
+        let ajax = new XMLHttpRequest();
+        ajax.open('get', '.....??');
+        ajax.onload = loadCallBack;
+        //만든 변수이름 상환없이 쓰려고 this로 칭하겠음
+        
+        function loadCallBack() { //on~이벤트 관련
+            // xhtp.responseText //결과를 받아오는 속성 
+            // console.log(xhtp.responseText);
+            // document.write(xhtp.responseText);
+            // let data = JSON.parse(xhtp.responseText);
+            // console.log(data);
+
+            //xml
+            console.log(this.responseXML);
+            let doc = this.responseXML
+            let records = doc.getElementsByTagName('record'); //HTMLCollection
+            records = doc.querySelectorAll('record'); //NodeList
+            console.log(records[0].children[1].innerHTML);
+            let show = document.getElementById('show');
+
+            records.forEach(member => {
+                // console.log(member)
+                let str = '';
+                for (let i = 0; i < member.children.length; i++) {
+                    str += member.children[i].innerHTML + " ";
+                }
+                console.log(str);
+                let li = document.createElement('li');
+                let txt = document.createTextNode(str);
+                li.appendChild(txt);
+                show.appendChild(li);
+
+                // member.children[0].innerHTML; //id
+                // member.children[1].innerHTML;//f_n
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <ul id="show">
+        <!-- <li>id,fn,ln,em,sal</li> -->
+
+    </ul>
+
+</body>
+
+</html>
